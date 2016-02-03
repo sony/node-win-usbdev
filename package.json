@@ -1,0 +1,30 @@
+﻿{
+  "name": "usb_dev",
+  "version": "0.0.1-dev",
+  "description": "Get a specific usb device path for windows using pid and vid.",
+  "main": "./build/Release/usb_dev",
+  "dependencies": {
+    "nan": "~2.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node-gyp rebuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sony/node-win-usbdev.git"
+  },
+  "files": [
+    "binding.gyp",
+    "usb_dev.cc",
+    "package.json"
+  ],
+  "author": {
+    "name": "Kana Maruyama",
+    "email": "Kana.Maruyama@jp.sony.com"
+  },
+  "license": "Apache 2.0",
+  "gypfile": true
+}
+
