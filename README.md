@@ -11,12 +11,6 @@ $ npm install https://github.com/sony/node-win-usbdev.git
 Please see test.js.
 
 
-## Release Notes
-Please see the following link.
-
-- [Release Notes](RELEASENOTE.md)
-
-
 ## License
 
 Copyright 2015, 2016 Sony Corporation
