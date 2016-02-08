@@ -1,6 +1,6 @@
 # node-win-usbdev
 
-The library is a node pacakge to get a path for a usb device using Prodcut ID and Vecndor ID on Windows Machine.
+The library is a node package to get a path for a usb device using Product ID and Vendor ID on Windows Machine.
 
 
 ### How to install
