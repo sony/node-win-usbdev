@@ -23,7 +23,7 @@ Depends:
   Microsoft Windows API, C++/STL, stdio, stdlib
 
 Copyright:
-  Copyright (c) 2015, 2016 Sony Corporation.  All rights reserved.
+  Copyright (c) 2016 Sony Corporation.  All rights reserved.
 ******************************************************************************/
 
 
