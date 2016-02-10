@@ -3,11 +3,11 @@
   usb_dev.cc
 
 Description:
-    Get a specific usb device path for windows        
+    Get a specific usb device path for windows
 
 Usage:
-    ex [in JavaScript code]) 
-    
+    ex [in JavaScript code])
+
     var VID = 0x054C;
     var PID = 0x0B94;
 
@@ -20,7 +20,7 @@ Knowledge relation:
     NaN, VID/PID
 
 Depends:
-  Microsoft Windows API, C++/STL, stdio, stdlib
+  Microsoft Windows API, C++/STL, stdio, stdlib, Native Abstraction for Node.js
 
 Copyright:
   Copyright (c) 2016 Sony Corporation.  All rights reserved.
@@ -56,7 +56,7 @@ static vector<string> regex_search(const string& text, const regex& re) {
 }
 
 /**
-   @param instanceIdに、@param pidと@param vidが、文字列として含まれているかをチェックする関数
+   instanceIdに、Product ID と Vendor IDが、文字列として含まれているかをチェックする関数
 */
 static bool isSelectedUsbDevInst(int vid, int pid, const char* instanceId) {
     string text(instanceId);
@@ -114,7 +114,6 @@ static bool isDisk(char driveLetter) {
   [Note]DeviceがDiskの場合のみ呼び出される前提
 */ 
 static unsigned long getDevNumByPidVid(int vid, int pid) {
-
     // Device Information Setの中で、DISK Device Interfaceを検索する
     HDEVINFO hDevInfo = ::SetupDiGetClassDevsA(&GUID_DEVINTERFACE_DISK, NULL, NULL, DIGCF_PRESENT | DIGCF_DEVICEINTERFACE);
     if (hDevInfo == INVALID_HANDLE_VALUE)  {
