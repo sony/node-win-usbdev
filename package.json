@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "usb_dev",
   "version": "0.0.1-dev",
   "description": "Get a specific usb device path for windows using pid and vid.",
@@ -27,4 +27,3 @@
   "license": "Apache 2.0",
   "gypfile": true
 }
-
